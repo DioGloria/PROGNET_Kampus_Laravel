@@ -1,0 +1,172 @@
+/* STYLE GLOBAL */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 40px;
+}
+
+/* HEADER & TITLE */
+h1 {
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* LINK UMUM */
+a {
+  text-decoration: none;
+  color: #2563eb;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LAYOUT WRAPPER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TOP BAR (untuk tombol Tambah Mahasiswa) */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* TOMBOL */
+.button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.tambah-btn {
+  background-color: #22c55e;
+}
+
+.tambah-btn:hover {
+  background-color: #16a34a;
+}
+
+/* TOMBOL HAPUS */
+.delete-btn {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* TABEL MAHASISWA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tr:hover {
+  background-color: #e2e8f0;
+}
+
+/* PESAN SUKSES */
+.success {
+  color: #16a34a;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* GIF CORNER */
+.corner-gif {
+  position: fixed;
+  bottom: 20px;     
+  left: 20px;       
+  width: 80px;      
+  height: auto;
+  opacity: 0.85;    
+  z-index: 1000;    
+  pointer-events: none; 
+}
+
+/* FORM EDIT / TAMBAH MAHASISWA */
+.form-card {
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
